@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+/* Layout: one column; a short header, then a grid of dish cards that grows as recipes are added */
+:root {
+  --bg: #fbf8f4;
+  --surface: #ffffff;
+  --fg: #2a1e19;
+  --muted: #74625a;
+  --line: #e7ddd5;
+  --sauce: #a8341c;
+  --calamansi: #5d7f1e;
+  --tint: #f6e9e2;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Literata", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1a1412; --surface: #231b18; --fg: #f1e7e1; --muted: #b3a097;
+    --line: #3a2e29; --sauce: #e8735a; --calamansi: #a7c95a; --tint: #2e211d;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1a1412; --surface: #231b18; --fg: #f1e7e1; --muted: #b3a097;
+  --line: #3a2e29; --sauce: #e8735a; --calamansi: #a7c95a; --tint: #2e211d;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 980px; margin: 0 auto; padding-inline: 20px; padding-block: 48px 64px; display: grid; gap: 36px; }
+
+header { display: grid; gap: 12px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(2.6rem, 8vw, 4.4rem); line-height: .95; margin: 0; letter-spacing: -.025em; text-wrap: balance; }
+h1 span { color: var(--sauce); }
+.lede { max-width: 60ch; color: var(--muted); margin: 0; }
+
+.bar { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+.bar h2 { font-family: var(--display); font-weight: 700; font-size: 1.4rem; margin: 0; }
+.bar span { font-family: var(--mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+
+a.dish { display: grid; gap: 14px; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; transition: border-color .15s, transform .15s; }
+a.dish:hover { border-color: var(--sauce); transform: translateY(-2px); }
+a.dish:focus-visible { outline: 2px solid var(--calamansi); outline-offset: 3px; }
+.dish-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.ver { color: var(--sauce); border: 1px solid currentColor; border-radius: 999px; padding: 2px 9px; }
+.dish h3 { font-family: var(--display); font-weight: 700; font-size: 1.7rem; line-height: 1.05; margin: 0; letter-spacing: -.01em; }
+.dish p { margin: 0; font-size: 15px; color: var(--muted); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font-family: var(--mono); font-size: 12px; background: var(--tint); border-radius: 6px; padding: 3px 8px; }
+.open { font-family: var(--mono); font-size: 13px; color: var(--calamansi); }
+
+.next { border: 1.5px dashed var(--line); border-radius: 12px; padding: 22px; display: grid; gap: 8px; align-content: start; color: var(--muted); }
+.next strong { font-family: var(--display); font-size: 1.15rem; color: var(--fg); }
+.next p { margin: 0; font-size: 15px; }
+
+@media (prefers-reduced-motion: reduce) { a.dish { transition: none; } a.dish:hover { transform: none; } }

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Karl's Pork Menudo</title>
+  <meta name="description" content="Pork menudo: shopping list, method and cooking notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Literata:opsz,wght@7..72,400;7..72,600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../css/recipe.css">
+</head>
+<body data-recipe="pork-menudo">
+<div class="wrap">
+  <header>
+    <a class="back" href="../index.html">&larr; Karl's Kitchen</a>
+    <div class="eyebrow"><span>Version <b>v1</b></span><span>Cooked Oct 10, 2026</span></div>
+    <h1>Pork <span>Menudo</span></h1>
+    <p class="lede">Pork shoulder marinated in calamansi and soy, braised in tomato sauce and liver spread, finished with potatoes, carrots and bell pepper. Seasoned to taste at the end, mostly with salt and brown sugar.</p>
+    <div class="facts">
+      <span class="fact"><strong>4 lb</strong> pork</span>
+      <span class="fact">Marinate <strong>30 min</strong></span>
+      <span class="fact">Marinade <strong>1 : 1</strong> calamansi : soy</span>
+    </div>
+  </header>
+
+  <div class="cols">
+    <aside class="shop" aria-labelledby="shop-h">
+      <h2 id="shop-h">Shopping list</h2>
+      <h3>Meat &amp; marinade</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-pork"><span class="qty">4 lb</span><span>Pork butt or shoulder</span></label></li>
+        <li><label><input type="checkbox" id="i-cala"><span class="qty tbd">equal parts</span><span>Calamansi juice</span></label></li>
+        <li><label><input type="checkbox" id="i-soy"><span class="qty tbd">equal parts</span><span>Soy sauce</span></label></li>
+        <li><label><input type="checkbox" id="i-relish"><span class="qty tbd">to taste</span><span>Sweet pickle relish</span></label></li>
+        <li><label><input type="checkbox" id="i-pepper"><span class="qty tbd">to taste</span><span>Ground black pepper</span></label></li>
+      </ul>
+      <h3>Aromatics</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-garlic"><span class="qty">2 bulbs</span><span>Garlic</span></label></li>
+        <li><label><input type="checkbox" id="i-onion"><span class="qty">2</span><span>Onions</span></label></li>
+        <li><label><input type="checkbox" id="i-tomato"><span class="qty">2</span><span>Tomatoes</span></label></li>
+        <li><label><input type="checkbox" id="i-bay"><span class="qty tbd">a few</span><span>Bay leaves</span></label></li>
+      </ul>
+      <h3>Sauce</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-sauce"><span class="qty tbd">as needed</span><span>Tomato sauce</span></label></li>
+        <li><label><input type="checkbox" id="i-liver"><span class="qty tbd">as needed</span><span>Liver spread</span></label></li>
+        <li><label><input type="checkbox" id="i-knorr"><span class="qty">1 cube</span><span>Knorr pork cube</span></label></li>
+        <li><label><input type="checkbox" id="i-water"><span class="qty">2 cups</span><span>Water</span></label></li>
+        <li><label><input type="checkbox" id="i-oil"><span class="qty tbd">for sautéing</span><span>Cooking oil</span></label></li>
+      </ul>
+      <h3>Vegetables</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-carrot"><span class="qty">4</span><span>Carrots</span></label></li>
+        <li><label><input type="checkbox" id="i-potato"><span class="qty">3</span><span>Potatoes</span></label></li>
+        <li><label><input type="checkbox" id="i-bell"><span class="qty">2</span><span>Bell peppers (1 green, 1 red)</span></label></li>
+      </ul>
+      <h3>Final seasoning</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-fish"><span class="qty tbd">to taste</span><span>Fish sauce</span></label></li>
+        <li><label><input type="checkbox" id="i-salt"><span class="qty tbd">to taste</span><span>Salt</span></label></li>
+        <li><label><input type="checkbox" id="i-sugar"><span class="qty tbd">to taste</span><span>Brown sugar</span></label></li>
+      </ul>
+      <div class="row-actions"><span id="count">0 of 20 checked</span><button type="button" id="clear">Clear checks</button></div>
+    </aside>
+
+    <section aria-labelledby="method-h">
+      <h2 id="method-h">Method</h2>
+      <ol class="steps">
+        <li><div><span class="step-title">Cut and marinate the pork</span><p>Cut 4 lb pork butt or shoulder into small rectangular pieces. In a mixing bowl, combine with calamansi juice and soy sauce in a 1:1 ratio, plus pepper and relish. Marinate 30 minutes.</p></div></li>
+        <li><div><span class="step-title">Prep the aromatics and vegetables</span><p>Crush 2 bulbs of garlic, cut 2 onions and 2 tomatoes. Peel and cube 4 carrots and 3 potatoes, and set them aside for later.</p></div></li>
+        <li><div><span class="step-title">Sauté</span><p>Heat cooking oil. Sauté the onion first, then the garlic, then the tomato.</p></div></li>
+        <li><div><span class="step-title">Add the pork</span><p>Add the pork, leaving as much of the marinade behind as you can. Cook over medium heat in its own juices with the onion, garlic and tomato.</p></div></li>
+        <li><div><span class="step-title">Build the sauce</span><p>Once boiling, add bay leaves, 1 Knorr pork cube and pepper. Then add the tomato sauce, then the liver spread. Mix and cook until the pork is cooked and soft and the sauce has reduced.</p></div></li>
+        <li><div><span class="step-title">Add potatoes and carrots</span><p>Add the cubed carrots and potatoes with 2 cups of water. Boil until they're cooked through and the sauce reduces again.</p></div></li>
+        <li><div><span class="step-title">Add bell pepper</span><p>Add 2 bell peppers cut into small pieces and let them cook.</p><span class="tip">Better with 1 green and 1 red than 2 green.</span></div></li>
+        <li><div><span class="step-title">Taste and adjust</span><p>Taste the sauce and adjust with fish sauce, salt, relish and brown sugar. Most of the adjusting was salt and brown sugar.</p></div></li>
+      </ol>
+    </section>
+  </div>
+
+  <div class="notes">
+    <div class="note">
+      <h2>Cook's notes</h2>
+      <ul>
+        <li>Needed salt and brown sugar at the end to balance the sauce.</li>
+        <li>Two green bell peppers worked; one green and one red would be better.</li>
+      </ul>
+    </div>
+    <div class="note">
+      <h2>Still perfecting</h2>
+      <ul>
+        <li>Calamansi and soy sauce amounts for the marinade</li>
+        <li>Tomato sauce and liver spread (can sizes)</li>
+        <li>How much salt and brown sugar went in at the end</li>
+        <li>Number of bay leaves and total cooking time</li>
+      </ul>
+    </div>
+  </div>
+
+  <section aria-labelledby="log-h">
+    <h2 id="log-h">Cooking log</h2>
+    <div class="log">
+      <table>
+        <thead><tr><th>Version</th><th>Date</th><th>What changed</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">v1</td><td class="mono">2026-10-10</td><td>First recorded batch</td><td>Adjusted mostly with salt and brown sugar at the end</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+<script src="../js/shopping-list.js"></script>
+</body>
+</html>

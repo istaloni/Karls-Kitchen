@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Karl's Pork Steak</title>
+  <meta name="description" content="Pork steak: shopping list, method and cooking notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Literata:opsz,wght@7..72,400;7..72,600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../css/recipe.css">
+</head>
+<body data-recipe="pork-steak">
+<div class="wrap">
+  <header>
+    <a class="back" href="../index.html">&larr; Karl's Kitchen</a>
+    <div class="eyebrow"><span>Version <b>v1</b></span><span>Recorded Oct 20, 2026</span></div>
+    <h1>Pork <span>Steak</span></h1>
+    <p class="lede">Skin-on pork loin marinated in lemon and soy, seared, then simmered in its own marinade with onion rings. Sweetened and peppered to taste at the end with brown sugar.</p>
+    <div class="facts">
+      <span class="fact"><strong>4 lb</strong> pork loin</span>
+      <span class="fact">Marinate <strong>30+ min</strong></span>
+      <span class="fact">Marinade <strong>1 : 1</strong> lemon : soy</span>
+    </div>
+  </header>
+
+  <div class="cols">
+    <aside class="shop" aria-labelledby="shop-h">
+      <h2 id="shop-h">Shopping list</h2>
+      <h3>Meat &amp; marinade</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-pork"><span class="qty">4 lb</span><span>Pork loin, skin on</span></label></li>
+        <li><label><input type="checkbox" id="i-lemon"><span class="qty">7</span><span>Lemons, juiced</span></label></li>
+        <li><label><input type="checkbox" id="i-soy"><span class="qty tbd">= lemon juice</span><span>Soy sauce</span></label></li>
+        <li><label><input type="checkbox" id="i-sugar"><span class="qty tbd">to taste</span><span>Brown sugar (marinade + finish)</span></label></li>
+        <li><label><input type="checkbox" id="i-pepper"><span class="qty tbd">to taste</span><span>Ground black pepper (marinade + finish)</span></label></li>
+      </ul>
+      <h3>Onions</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-onion"><span class="qty">4 big</span><span>Onions (1 chopped, 3 in rings)</span></label></li>
+      </ul>
+      <h3>Pantry</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-oil"><span class="qty tbd">for frying</span><span>Cooking oil</span></label></li>
+      </ul>
+      <div class="row-actions"><span id="count">0 of 7 checked</span><button type="button" id="clear">Clear checks</button></div>
+    </aside>
+
+    <section aria-labelledby="method-h">
+      <h2 id="method-h">Method</h2>
+      <ol class="steps">
+        <li><div><span class="step-title">Marinate the pork</span><p>Squeeze the 7 lemons. Marinate the 4 lb pork loin in equal volumes of lemon juice and soy sauce, with pepper and brown sugar, for at least 30 minutes.</p></div></li>
+        <li><div><span class="step-title">Sear the pork</span><p>Lift the pork out and save the marinade. Sear and fry the pork in a frying pan, then take it out of the pan.</p></div></li>
+        <li><div><span class="step-title">Sauté onion with the pork</span><p>In a new pan, sauté 1 onion cut into small pieces. Add the seared pork and sauté it over medium heat until it picks up the onion flavor.</p></div></li>
+        <li><div><span class="step-title">Simmer in the marinade</span><p>Pour in the rest of the marinade and bring it to a boil so the pork cooks through.</p></div></li>
+        <li><div><span class="step-title">Add onion rings</span><p>While it boils, slice the other 3 big onions into rings and add them to the pan.</p></div></li>
+        <li><div><span class="step-title">Season and finish</span><p>Add brown sugar and pepper a little at a time, tasting as you go, until it tastes right. It's done once the onion rings are cooked.</p></div></li>
+      </ol>
+    </section>
+  </div>
+
+  <div class="notes">
+    <div class="note">
+      <h2>Cook's notes</h2>
+      <ul>
+        <li>Seasoned at the end with brown sugar and pepper, added until it tasted right.</li>
+      </ul>
+    </div>
+    <div class="note">
+      <h2>Still perfecting</h2>
+      <ul>
+        <li>How much lemon juice the 7 lemons give, and the matching soy sauce</li>
+        <li>Brown sugar and pepper in the marinade</li>
+        <li>Brown sugar and pepper added at the end</li>
+        <li>Sear time per side and total simmer time</li>
+      </ul>
+    </div>
+  </div>
+
+  <section aria-labelledby="log-h">
+    <h2 id="log-h">Cooking log</h2>
+    <div class="log">
+      <table>
+        <thead><tr><th>Version</th><th>Date</th><th>What changed</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">v1</td><td class="mono">2026-10-20</td><td>First recorded batch</td><td>Finished with brown sugar and pepper to taste</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+<script src="../js/shopping-list.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Karl's Beef Nilaga</title>
+  <meta name="description" content="Beef nilaga: shopping list, method and cooking notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Literata:opsz,wght@7..72,400;7..72,600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../css/recipe.css">
+</head>
+<body data-recipe="beef-nilaga">
+<div class="wrap">
+  <header>
+    <a class="back" href="../index.html">&larr; Karl's Kitchen</a>
+    <div class="eyebrow"><span>Version <b>v1</b></span><span>Recorded Oct 23, 2026</span></div>
+    <h1>Beef <span>Nilaga</span></h1>
+    <p class="lede">Seared beef shank with its bone marrow, boiled in beef broth until tender, then finished with potatoes, corn or saba, and quick-cooked cabbage, green beans and bok choy.</p>
+    <div class="facts">
+      <span class="fact"><strong>5</strong> big pieces beef shank</span>
+      <span class="fact">Boil <strong>1.5 hr</strong></span>
+      <span class="fact">Broth <strong>1 : 1</strong> beef broth : water</span>
+    </div>
+  </header>
+
+  <div class="cols">
+    <aside class="shop" aria-labelledby="shop-h">
+      <h2 id="shop-h">Shopping list</h2>
+      <h3>Meat</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-shank"><span class="qty">5 big</span><span>Beef shank pieces, with marrow bone</span></label></li>
+      </ul>
+      <h3>Aromatics</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-garlic"><span class="qty tbd">as needed</span><span>Garlic</span></label></li>
+        <li><label><input type="checkbox" id="i-onion"><span class="qty tbd">as needed</span><span>Onion</span></label></li>
+        <li><label><input type="checkbox" id="i-corns"><span class="qty tbd">a handful</span><span>Whole peppercorns</span></label></li>
+      </ul>
+      <h3>Broth &amp; seasoning</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-broth"><span class="qty tbd">= water</span><span>Beef broth</span></label></li>
+        <li><label><input type="checkbox" id="i-knorr"><span class="qty">1 cube</span><span>Knorr beef cube</span></label></li>
+        <li><label><input type="checkbox" id="i-fish"><span class="qty tbd">to taste</span><span>Fish sauce</span></label></li>
+        <li><label><input type="checkbox" id="i-pepper"><span class="qty tbd">to taste</span><span>Ground black pepper</span></label></li>
+        <li><label><input type="checkbox" id="i-salt"><span class="qty tbd">to taste</span><span>Salt</span></label></li>
+        <li><label><input type="checkbox" id="i-oil"><span class="qty tbd">for searing</span><span>Cooking oil</span></label></li>
+      </ul>
+      <h3>Vegetables</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-potato"><span class="qty tbd">as needed</span><span>Potatoes</span></label></li>
+        <li><label><input type="checkbox" id="i-corn"><span class="qty tbd">as needed</span><span>Corn and/or saba bananas</span></label></li>
+        <li><label><input type="checkbox" id="i-cabbage"><span class="qty tbd">as needed</span><span>Cabbage</span></label></li>
+        <li><label><input type="checkbox" id="i-beans"><span class="qty tbd">as needed</span><span>Green beans</span></label></li>
+        <li><label><input type="checkbox" id="i-bokchoy"><span class="qty tbd">as needed</span><span>Bok choy</span></label></li>
+      </ul>
+      <div class="row-actions"><span id="count">0 of 15 checked</span><button type="button" id="clear">Clear checks</button></div>
+    </aside>
+
+    <section aria-labelledby="method-h">
+      <h2 id="method-h">Method</h2>
+      <ol class="steps">
+        <li><div><span class="step-title">Season and sear the shank</span><p>Season the 5 big pieces of beef shank with salt and pepper. Sear them in oil in a frying pan.</p></div></li>
+        <li><div><span class="step-title">Cut the beef</span><p>Once seared, cut the shank into smaller pieces, cutting around the bone marrow so it stays intact.</p></div></li>
+        <li><div><span class="step-title">Sauté with garlic and onion</span><p>In a new pan, sauté garlic and onion. Add the cut beef and the bone marrow over medium heat. Season with fish sauce and ground pepper.</p></div></li>
+        <li><div><span class="step-title">Cook down for 15 minutes</span><p>Sauté on medium heat for 15 minutes, mixing every so often so it doesn't burn.</p></div></li>
+        <li><div><span class="step-title">Add broth and boil 1.5 hours</span><p>Add beef broth and water in about a 1:1 ratio, as much as you want for the soup. Turn the heat up and boil for 1.5 hours until the beef is tender.</p><span class="tip">Keep adding water as it boils down.</span></div></li>
+        <li><div><span class="step-title">Add peppercorns and Knorr</span><p>Once the beef is tender, add whole peppercorns and 1 Knorr beef cube.</p></div></li>
+        <li><div><span class="step-title">Add potatoes and corn or saba</span><p>Add peeled, cut potatoes and corn or saba. Boil until the potatoes are almost cooked.</p></div></li>
+        <li><div><span class="step-title">Taste and adjust</span><p>Taste the soup and adjust with fish sauce, pepper and salt.</p></div></li>
+        <li><div><span class="step-title">Add the greens</span><p>Add the cabbage, green beans and bok choy. Cook only briefly. Don't overcook the vegetables at this point.</p></div></li>
+      </ol>
+    </section>
+  </div>
+
+  <div class="notes">
+    <div class="note">
+      <h2>Cook's notes</h2>
+      <ul>
+        <li>Seasoned to taste with fish sauce, pepper and salt before adding the greens.</li>
+      </ul>
+    </div>
+    <div class="note">
+      <h2>Still perfecting</h2>
+      <ul>
+        <li>Weight of the 5 shank pieces</li>
+        <li>How many garlic cloves and onions</li>
+        <li>Cups of beef broth and water</li>
+        <li>How many potatoes, ears of corn or saba, and how much of each green</li>
+        <li>How long the greens cook before turning off the heat</li>
+      </ul>
+    </div>
+  </div>
+
+  <section aria-labelledby="log-h">
+    <h2 id="log-h">Cooking log</h2>
+    <div class="log">
+      <table>
+        <thead><tr><th>Version</th><th>Date</th><th>What changed</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">v1</td><td class="mono">2026-10-23</td><td>First recorded batch</td><td>Seasoned to taste with fish sauce, pepper and salt</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+<script src="../js/shopping-list.js"></script>
+</body>
+</html>
