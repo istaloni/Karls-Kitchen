@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Karl's Chop Suey</title>
+  <meta name="description" content="Chop suey: shopping list, method and cooking notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Literata:opsz,wght@7..72,400;7..72,600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../css/recipe.css">
+</head>
+<body data-recipe="chop-suey">
+<div class="wrap">
+  <header>
+    <a class="back" href="../index.html">&larr; Karl's Kitchen</a>
+    <div class="eyebrow"><span>Version <b>v1</b></span><span>Recorded Nov 8, 2026</span></div>
+    <h1>Chop <span>Suey</span></h1>
+    <p class="lede">Thin-sliced chicken breast in a soy and oyster sauce, thickened with a cornstarch slurry, with eight kinds of vegetables cooked just until crunchy. Quail eggs go in at the end.</p>
+    <div class="facts">
+      <span class="fact"><strong>1&ndash;2 lb</strong> chicken breast</span>
+      <span class="fact">Water <strong>2 cups</strong></span>
+      <span class="fact"><strong>8</strong> vegetables, kept crunchy</span>
+    </div>
+  </header>
+
+  <div class="cols">
+    <aside class="shop" aria-labelledby="shop-h">
+      <h2 id="shop-h">Shopping list</h2>
+      <h3>Meat &amp; eggs</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-chicken"><span class="qty">1&ndash;2 lb</span><span>Chicken breast</span></label></li>
+        <li><label><input type="checkbox" id="i-quail"><span class="qty tbd">as needed</span><span>Quail eggs, cooked and peeled</span></label></li>
+      </ul>
+      <h3>Aromatics</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-onion"><span class="qty">1</span><span>Onion</span></label></li>
+        <li><label><input type="checkbox" id="i-garlic"><span class="qty">2 bulbs</span><span>Garlic</span></label></li>
+      </ul>
+      <h3>Sauce &amp; seasoning</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-oil"><span class="qty tbd">for saut&eacute;ing</span><span>Avocado oil</span></label></li>
+        <li><label><input type="checkbox" id="i-soy"><span class="qty tbd">to taste</span><span>Soy sauce</span></label></li>
+        <li><label><input type="checkbox" id="i-oyster"><span class="qty tbd">to taste</span><span>Oyster sauce</span></label></li>
+        <li><label><input type="checkbox" id="i-knorr"><span class="qty tbd">as needed</span><span>Knorr chicken powder</span></label></li>
+        <li><label><input type="checkbox" id="i-corn-starch"><span class="qty tbd">for slurry</span><span>Cornstarch</span></label></li>
+        <li><label><input type="checkbox" id="i-salt"><span class="qty tbd">to taste</span><span>Salt</span></label></li>
+        <li><label><input type="checkbox" id="i-pepper"><span class="qty tbd">to taste</span><span>Ground black pepper</span></label></li>
+      </ul>
+      <h3>Vegetables</h3>
+      <ul>
+        <li><label><input type="checkbox" id="i-carrot"><span class="qty">2&ndash;3</span><span>Carrots</span></label></li>
+        <li><label><input type="checkbox" id="i-youngcorn"><span class="qty tbd">as needed</span><span>Young corn (baby corn)</span></label></li>
+        <li><label><input type="checkbox" id="i-cauli"><span class="qty tbd">as needed</span><span>Cauliflower</span></label></li>
+        <li><label><input type="checkbox" id="i-broccoli"><span class="qty tbd">as needed</span><span>Broccoli</span></label></li>
+        <li><label><input type="checkbox" id="i-redbell"><span class="qty tbd">as needed</span><span>Red bell pepper</span></label></li>
+        <li><label><input type="checkbox" id="i-greenbell"><span class="qty tbd">as needed</span><span>Green bell pepper</span></label></li>
+        <li><label><input type="checkbox" id="i-snowpeas"><span class="qty tbd">as needed</span><span>Snow peas</span></label></li>
+        <li><label><input type="checkbox" id="i-cabbage"><span class="qty tbd">as needed</span><span>Cabbage</span></label></li>
+      </ul>
+      <div class="row-actions"><span id="count">0 of 19 checked</span><button type="button" id="clear">Clear checks</button></div>
+    </aside>
+
+    <section aria-labelledby="method-h">
+      <h2 id="method-h">Method</h2>
+      <ol class="steps">
+        <li><div><span class="step-title">Saut&eacute; the aromatics</span><p>Saut&eacute; 1 onion and 2 bulbs of garlic in avocado oil.</p></div></li>
+        <li><div><span class="step-title">Add and season the chicken</span><p>Add 1 to 2 lb chicken breast cut into thin slices. Season with salt and pepper, then add soy sauce and oyster sauce to taste.</p></div></li>
+        <li><div><span class="step-title">Cook for 10 minutes</span><p>Saut&eacute; on medium heat for 10 minutes so the chicken absorbs the flavor.</p></div></li>
+        <li><div><span class="step-title">Add water and boil</span><p>Add 2 cups of water and turn up the heat. Once it boils, add Knorr chicken powder. Mix, then cover until the sauce is slightly reduced.</p></div></li>
+        <li><div><span class="step-title">Add the carrots</span><p>Add 2 to 3 carrots sliced into flat circles and let them cook.</p></div></li>
+        <li><div><span class="step-title">Thicken the sauce</span><p>While the carrots cook, mix cornstarch with water to make a slurry. Stir it into the pan to thicken the sauce.</p></div></li>
+        <li><div><span class="step-title">Add the vegetables</span><p>Add young corn, cauliflower, broccoli, sliced red and green bell pepper, snow peas and sliced cabbage. Cover so the vegetables soften, then mix well.</p><span class="tip">Don't overcook the vegetables. They're better crunchy.</span></div></li>
+        <li><div><span class="step-title">Season and finish</span><p>Season to taste with salt and pepper. At the end, add the cooked quail eggs.</p></div></li>
+      </ol>
+    </section>
+  </div>
+
+  <section aria-labelledby="log-h">
+    <h2 id="log-h">Cooking log</h2>
+    <div class="log">
+      <table>
+        <thead><tr><th>Version</th><th>Date</th><th>What changed</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">v1</td><td class="mono">2026-11-08</td><td>First recorded batch</td><td>Vegetables kept crunchy</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+<script src="../js/shopping-list.js"></script>
+</body>
+</html>
